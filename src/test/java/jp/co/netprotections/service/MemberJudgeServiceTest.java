@@ -15,20 +15,239 @@ import jp.co.netprotections.service.impl.MemberJudgeServiceImpl;
 @RunWith(JUnit4.class)
 public class MemberJudgeServiceTest{
 //	MemberJudgeRequestDto request = new MemberJudgeRequestDto("haruhi",1,1,3,3,3);
-	MemberJudgeRequestDto request = new MemberJudgeRequestDto();
-
 
 //	テストコードのパラメータとして必要なので、インスタンス生成
 
 	MemberJudgeServiceImpl main = new MemberJudgeServiceImpl();
 
 	@Test
-	public void test001() {
+	public void testScoreJudge001(){
+		MemberJudgeRequestDto request = new MemberJudgeRequestDto();
+		
+		request.setMemberName();
+		request.setEventPlanning();
+		request.setCogitation();
+		request.setCoodination();
+		request.setProgrammingAbility();
+		request.setInfrastructureKnowledge();
+		
 		MemberJudgeResponseDto result = main.scoreJudge(request);
 
-		assertThat(result.getEnlistedPropriety(),is(false));
+		assertThat(result.getEnlistedPropriety(),is());
 	}
+	@Test
+	public void testScoreJudge(){
+		MemberJudgeRequestDto request = new MemberJudgeRequestDto();
+		
+		request.setMemberName();
+		request.setEventPlanning();
+		request.setCogitation();
+		request.setCoodination();
+		request.setProgrammingAbility();
+		request.setInfrastructureKnowledge();
+		
+		MemberJudgeResponseDto result = main.scoreJudge(request);
 
+		assertThat(result.getEnlistedPropriety(),is());
+	}
+	@Test
+	public void testScoreJudge(){
+		MemberJudgeRequestDto request = new MemberJudgeRequestDto();
+		
+		request.setMemberName();
+		request.setEventPlanning();
+		request.setCogitation();
+		request.setCoodination();
+		request.setProgrammingAbility();
+		request.setInfrastructureKnowledge();
+		
+		MemberJudgeResponseDto result = main.scoreJudge(request);
+
+		assertThat(result.getEnlistedPropriety(),is());
+	}
+	@Test
+	public void testScoreJudge(){
+		MemberJudgeRequestDto request = new MemberJudgeRequestDto();
+		
+		request.setMemberName();
+		request.setEventPlanning();
+		request.setCogitation();
+		request.setCoodination();
+		request.setProgrammingAbility();
+		request.setInfrastructureKnowledge();
+		
+		MemberJudgeResponseDto result = main.scoreJudge(request);
+
+		assertThat(result.getEnlistedPropriety(),is());
+	}
+	@Test
+	public void testScoreJudge(){
+		MemberJudgeRequestDto request = new MemberJudgeRequestDto();
+		
+		request.setMemberName();
+		request.setEventPlanning();
+		request.setCogitation();
+		request.setCoodination();
+		request.setProgrammingAbility();
+		request.setInfrastructureKnowledge();
+		
+		MemberJudgeResponseDto result = main.scoreJudge(request);
+
+		assertThat(result.getEnlistedPropriety(),is());
+	}
+	@Test
+	public void testScoreJudge(){
+		MemberJudgeRequestDto request = new MemberJudgeRequestDto();
+		
+		request.setMemberName();
+		request.setEventPlanning();
+		request.setCogitation();
+		request.setCoodination();
+		request.setProgrammingAbility();
+		request.setInfrastructureKnowledge();
+		
+		MemberJudgeResponseDto result = main.scoreJudge(request);
+
+		assertThat(result.getEnlistedPropriety(),is());
+	}
+	@Test
+	public void testScoreJudge(){
+		MemberJudgeRequestDto request = new MemberJudgeRequestDto();
+		
+		request.setMemberName();
+		request.setEventPlanning();
+		request.setCogitation();
+		request.setCoodination();
+		request.setProgrammingAbility();
+		request.setInfrastructureKnowledge();
+		
+		MemberJudgeResponseDto result = main.scoreJudge(request);
+
+		assertThat(result.getEnlistedPropriety(),is());
+	}
+	@Test
+	public void testScoreJudge(){
+		MemberJudgeRequestDto request = new MemberJudgeRequestDto();
+		
+		request.setMemberName();
+		request.setEventPlanning();
+		request.setCogitation();
+		request.setCoodination();
+		request.setProgrammingAbility();
+		request.setInfrastructureKnowledge();
+		
+		MemberJudgeResponseDto result = main.scoreJudge(request);
+
+		assertThat(result.getEnlistedPropriety(),is());
+	}
+	@Test
+	public void testScoreJudge(){
+		MemberJudgeRequestDto request = new MemberJudgeRequestDto();
+		
+		request.setMemberName();
+		request.setEventPlanning();
+		request.setCogitation();
+		request.setCoodination();
+		request.setProgrammingAbility();
+		request.setInfrastructureKnowledge();
+		
+		MemberJudgeResponseDto result = main.scoreJudge(request);
+
+		assertThat(result.getEnlistedPropriety(),is());
+	}
+	
+	@Test
+	public void testScoreJudge(){
+		MemberJudgeRequestDto request = new MemberJudgeRequestDto();
+		
+		request.setMemberName();
+		request.setEventPlanning();
+		request.setCogitation();
+		request.setCoodination();
+		request.setProgrammingAbility();
+		request.setInfrastructureKnowledge();
+		
+		MemberJudgeResponseDto result = main.scoreJudge(request);
+
+		assertThat(result.getEnlistedPropriety(),is());
+	}
+	@Test
+	public void testScoreJudge(){
+		MemberJudgeRequestDto request = new MemberJudgeRequestDto();
+		
+		request.setMemberName();
+		request.setEventPlanning();
+		request.setCogitation();
+		request.setCoodination();
+		request.setProgrammingAbility();
+		request.setInfrastructureKnowledge();
+		
+		MemberJudgeResponseDto result = main.scoreJudge(request);
+
+		assertThat(result.getEnlistedPropriety(),is());
+	}
+	@Test
+	public void testScoreJudge(){
+		MemberJudgeRequestDto request = new MemberJudgeRequestDto();
+		
+		request.setMemberName();
+		request.setEventPlanning();
+		request.setCogitation();
+		request.setCoodination();
+		request.setProgrammingAbility();
+		request.setInfrastructureKnowledge();
+		
+		MemberJudgeResponseDto result = main.scoreJudge(request);
+
+		assertThat(result.getEnlistedPropriety(),is());
+	}
+	@Test
+	public void testScoreJudge(){
+		MemberJudgeRequestDto request = new MemberJudgeRequestDto();
+		
+		request.setMemberName();
+		request.setEventPlanning();
+		request.setCogitation();
+		request.setCoodination();
+		request.setProgrammingAbility();
+		request.setInfrastructureKnowledge();
+		
+		MemberJudgeResponseDto result = main.scoreJudge(request);
+
+		assertThat(result.getEnlistedPropriety(),is());
+	}
+	@Test
+	public void testScoreJudge(){
+		MemberJudgeRequestDto request = new MemberJudgeRequestDto();
+		
+		request.setMemberName();
+		request.setEventPlanning();
+		request.setCogitation();
+		request.setCoodination();
+		request.setProgrammingAbility();
+		request.setInfrastructureKnowledge();
+		
+		MemberJudgeResponseDto result = main.scoreJudge(request);
+
+		assertThat(result.getEnlistedPropriety(),is());
+	}
+	@Test
+	public void testScoreJudge(){
+		MemberJudgeRequestDto request = new MemberJudgeRequestDto();
+		
+		request.setMemberName();
+		request.setEventPlanning();
+		request.setCogitation();
+		request.setCoodination();
+		request.setProgrammingAbility();
+		request.setInfrastructureKnowledge();
+		
+		MemberJudgeResponseDto result = main.scoreJudge(request);
+
+		assertThat(result.getEnlistedPropriety(),is());
+	}
+	
+	
 	@Test
 	public void test002() {
 		MemberJudgeResponseDto result = main.setNull();

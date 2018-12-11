@@ -6,5 +6,5 @@ import jp.co.netprotections.dto.MemberJudgeResponseDto;
 public interface MemberJudgeService {
 
 	public MemberJudgeResponseDto scoreJudge(MemberJudgeRequestDto dto);
-	public MemberJudgeResponseDto setNull();
+//	public MemberJudgeResponseDto setNull();
 }

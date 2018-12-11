@@ -14,15 +14,15 @@ public class MemberJudgeRequestDto {
 
 	private int infrastructureKnowledge;
 
-	public MemberJudgeRequestDto(String memberName, int eventPlanning, int cogitation, int coodination, int programmingAbility, int infrastructureKnowledge){
-		this.memberName = memberName;
-		this.eventPlanning = eventPlanning;
-		this.cogitation = cogitation;
-		this.coodination = coodination;
-		this.programmingAbility = programmingAbility;
-		this.infrastructureKnowledge = infrastructureKnowledge;
-		// TODO 自動生成されたコンストラクター・スタブ
-	}
+//	public MemberJudgeRequestDto(String memberName, int eventPlanning, int cogitation, int coodination, int programmingAbility, int infrastructureKnowledge){
+//		this.memberName = memberName;
+//		this.eventPlanning = eventPlanning;
+//		this.cogitation = cogitation;
+//		this.coodination = coodination;
+//		this.programmingAbility = programmingAbility;
+//		this.infrastructureKnowledge = infrastructureKnowledge;
+//		// TODO 自動生成されたコンストラクター・スタブ
+//	}
 	public String getMemberName() {
 		return memberName;
 	}
