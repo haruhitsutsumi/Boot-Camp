@@ -15,7 +15,7 @@ import jp.co.netprotections.service.impl.MemberJudgeServiceImpl;
 @RunWith(JUnit4.class)
 public class MemberJudgeServiceTest{
 
-//	テストコードのパラメータとして必要なので、インスタンス生成
+//	メソッドを実行するインスタンスとして必要なので、生成
 
 	MemberJudgeServiceImpl main = new MemberJudgeServiceImpl();
 

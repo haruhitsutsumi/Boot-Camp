@@ -9,35 +9,29 @@ import jp.co.netprotections.dto.MemberJudgeRequestDto;
 @Component
 public class MemberJudgeRequestListDto{
 
-	private int judgeNo;
-
-	private String judgeMan;
+//	private int judgeNo;
+//
+//	private String judgeMan;
 
 	private List<MemberJudgeRequestDto> memberCandidatesList;
 
-//	public MemberJudgeRequestListDto(int judgeNo, String judgeMan, List<MemberJudgeRequestDto> memberCandidatesList) {
-//		this.judgeNo=judgeNo;
-//		this.judgeMan=judgeMan;
-//		this.memberCandidatesList=memberCandidatesList;
-//		// TODO 自動生成されたコンストラクター・スタブ
+//	public int getJudgeNo() {
+//
+//		return judgeNo;
 //	}
-	public int getJudgeNo() {
+//	public void setJudgeNo(int judgeNo) {
+//
+//		this.judgeNo=judgeNo;
+//	}
 
-		return judgeNo;
-	}
-	public void setJudgeNo(int judgeNo) {
-
-		this.judgeNo=judgeNo;
-	}
-
-	public String getJudgeMan() {
-
-		return judgeMan;
-	}
-	public void setJudgeMan(String name) {
-
-		this.judgeMan=name;
-	}
+//	public String getJudgeMan() {
+//
+//		return judgeMan;
+//	}
+//	public void setJudgeMan(String name) {
+//
+//		this.judgeMan=name;
+//	}
 	public List<MemberJudgeRequestDto> getMemberCandidatesList() {
 
 		return memberCandidatesList;

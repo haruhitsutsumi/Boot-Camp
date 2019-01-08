@@ -28,16 +28,5 @@ public class MemberJudgeServiceImpl implements MemberJudgeService{
 				response.setEnlistedPropriety(true);
 				}
 			return response;
-		}
-		//条件を満たさないリスト要素に名前(null)と審査結果(false)を詰める
-//		public MemberJudgeResponseDto setNull() {
-//
-//			MemberJudgeResponseDto responseNull = new MemberJudgeResponseDto();
-//
-//			responseNull.setMemberName(null);
-//
-//			responseNull.setEnlistedPropriety(false);
-//
-//			return responseNull;
-//		}
+	}
 }

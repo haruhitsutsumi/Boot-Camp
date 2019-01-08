@@ -22,8 +22,6 @@ public class MemberJudgeController {
 
 	@Autowired
 	private MemberJudgeService memberJudgeService;
-	@Autowired
-	private ResponseUtil responseUtil;
 
 	@RequestMapping(value="/main",method=RequestMethod.POST,
 			consumes=org.springframework.http.MediaType.APPLICATION_JSON_VALUE)
@@ -43,38 +41,24 @@ public class MemberJudgeController {
 			//リストの各要素を処理し、上記で作成したリスト型にaddする
 			for(MemberJudgeRequestDto request : memberCandidatesListClass.getMemberCandidatesList()){
 
-					if(this.requestCheck(request)==true){
+					if(ResponseUtil.requestCheck(request)==true){
 						//値の診断を実施し名前と審査結果を詰める
 						MemberJudgeResponseDto response = memberJudgeService.scoreJudge(request);
 						responseList.add(response);
 					}
 					else{
 						//名前(null)と審査結果(false)を詰める
-						MemberJudgeResponseDto response = responseUtil.setNull();
+						MemberJudgeResponseDto response = ResponseUtil.setNull();
 						responseList.add(response);
 					}
 				}
 		//戻り値の型であるMemberJudgeResponseListDtoのresponseListDtoのフィールドに詰める
 
 		responseListDto.setJudgedCandidatesResultList(responseList);
-		responseListDto.setJudgeMan(memberCandidatesListClass.getJudgeMan());
-		responseListDto.setJudgeNo(memberCandidatesListClass.getJudgeNo());
+//		responseListDto.setJudgeMan(memberCandidatesListClass.getJudgeMan());
+//		responseListDto.setJudgeNo(memberCandidatesListClass.getJudgeNo());
 
 		return responseListDto;
-		}
-	}
-
-//リクエスト単体のチェック。名前があって、各値が0~5であるかの確認。
-	private boolean requestCheck(MemberJudgeRequestDto request) {
-		if((0<= request.getEventPlanning() && 5>=request.getEventPlanning())
-				&&(0<= request.getCogitation() && 5>=request.getCogitation())
-				&&(0<= request.getCoodination() && 5>=request.getCoodination())
-				&&(0<= request.getProgrammingAbility() && 5>=request.getProgrammingAbility())
-				&&(0<= request.getInfrastructureKnowledge() && 5>=request.getInfrastructureKnowledge())
-				&&(request.getMemberName()!=null))
-			{return true;
-		}else {
-			return false;
 		}
 	}
 }
